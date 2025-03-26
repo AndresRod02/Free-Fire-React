@@ -11,7 +11,7 @@
     text-decoration: none;
 }
 .App{
-    background-image: url('/fondo.jpg');
+    background-image: url('/fondo.webp');
     background-size: cover;
     background-position: center;
 }
@@ -211,7 +211,6 @@
     list-style-type: none;
     border-radius: 20px;
     display: flex;
-    background-image: url(/pokeball.png);
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: bottom right;

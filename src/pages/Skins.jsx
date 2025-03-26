@@ -54,7 +54,7 @@ const Skins = () => {
         <div className='gridCard'>
             <div className="card">
                 <div className="image_container">
-                    <img src='skin2.png' width="160%"/>
+                    <img src='skin2.webp' width="160%"/>
                 </div>
                 <div className="title">
                     <span>Sakura</span>
@@ -65,7 +65,7 @@ const Skins = () => {
             </div>
             <div className="card">
                 <div className="image_container">
-                    <img src='skin2.png' width="160%"/>
+                    <img src='skin2.webp' width="160%"/>
                 </div>
                 <div className="title">
                     <span>Sakura</span>
@@ -76,7 +76,7 @@ const Skins = () => {
             </div>
             <div className="card">
                 <div className="image_container">
-                    <img src='skin2.png' width="160%"/>
+                    <img src='skin2.webp' width="160%"/>
                 </div>
                 <div className="title">
                     <span>Sakura</span>
@@ -87,7 +87,7 @@ const Skins = () => {
             </div>
             <div className="card">
                 <div className="image_container">
-                    <img src='skin2.png' width="160%"/>
+                    <img src='skin2.webp' width="160%"/>
                 </div>
                 <div className="title">
                     <span>Sakura</span>
@@ -98,7 +98,7 @@ const Skins = () => {
             </div>
             <div className="card">
                 <div className="image_container">
-                    <img src='skin2.png' width="160%"/>
+                    <img src='skin2.webp' width="160%"/>
                 </div>
                 <div className="title">
                     <span>Sakura</span>
@@ -109,7 +109,7 @@ const Skins = () => {
             </div>
             <div className="card">
                 <div className="image_container">
-                    <img src='skin2.png' width="160%"/>
+                    <img src='skin2.webp' width="160%"/>
                 </div>
                 <div className="title">
                     <span>Sakura</span>
@@ -120,7 +120,7 @@ const Skins = () => {
             </div>
             <div className="card">
                 <div className="image_container">
-                    <img src='skin2.png' width="160%"/>
+                    <img src='skin2.webp' width="160%"/>
                 </div>
                 <div className="title">
                     <span>Sakura</span>
@@ -131,7 +131,7 @@ const Skins = () => {
             </div>
             <div className="card">
                 <div className="image_container">
-                    <img src='skin2.png' width="160%"/>
+                    <img src='skin2.webp' width="160%"/>
                 </div>
                 <div className="title">
                     <span>Sakura</span>
@@ -142,7 +142,7 @@ const Skins = () => {
             </div>
             <div className="card">
                 <div className="image_container">
-                    <img src='skin2.png' width="160%"/>
+                    <img src='skin2.webp' width="160%"/>
                 </div>
                 <div className="title">
                     <span>Sakura</span>

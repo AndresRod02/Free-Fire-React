@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className='home'>
             <h1>Hola jugador</h1>
-            <img src='/garena.png' alt=""/>
+            <img src='/garena.webp' alt=""/>
             <img src="/hayato.webp" alt="" id='ash'/>
             <h2>Ingresa tu ID para empezar</h2>
             <Username></Username>
