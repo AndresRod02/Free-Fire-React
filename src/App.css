@@ -1,0 +1,610 @@
+@font-face {
+    font-family: 'Urban_Jungle';
+    src: url(/fonts/UrbanJungleDEMO.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+.App{
+    background-image: url('/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+::-webkit-scrollbar{
+    display: none;
+  }
+.decisionPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+.skinsPage, .diamondsPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+.formDiamonds{
+    background-color: #0000008e;
+}
+.skinsPage > h1{
+    color: white;
+    margin-top: 1rem;
+}
+.gridCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    height: 200rem;
+    overflow-y: auto;
+    margin-top: 2rem;
+}
+.decisionPage > h1{
+    color: white;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.buttonContainer > button{
+    border-radius: 2rem;
+    height: 5rem;
+    width: 23rem;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    color: rgb(200, 140, 0);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.golden-border {
+    border: 3px solid #ffd700 !important;
+    box-shadow: 0px 0px 10px gold !important;
+    background-color: #18181b;
+    color: white;
+  }
+.custom-button {
+    background-color: black !important;
+    color: white !important;
+    border: 2px solid gold !important;
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+  }
+
+.custom-button:hover {
+    background-color: gold !important;
+    color: black !important;
+  }
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.home > img{
+    width: 130px;
+    z-index: 1;
+}
+.home > h1{
+    font-family: 'Urban_Jungle';
+    color: white;
+    letter-spacing: 0.2rem;
+}
+.home > h2{
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: white;
+}
+.home  img:nth-child(2){
+    width: 280px;
+    position: fixed;
+    right: -2rem;
+    z-index: 0;
+    top: -2rem;
+    opacity: 0.3;
+}
+.pokeball{
+    width: 500px;
+    position: fixed;
+    right: -7rem;
+    z-index: 0;
+    top: -7rem;
+    animation: rotate 2s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    opacity: 0.3;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+.username{
+    display: flex;
+}
+.username > input{
+    height: 3rem;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.558);
+    width: 350px;
+    border: none;
+    z-index: 2;
+    font-size: 2rem;
+}
+.username > button{
+    background-color: rgb(200, 140, 0);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    margin-left: 19.5rem;
+    margin-top: 0px;
+    border: none;
+    z-index: 2;
+}
+.characters{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.numbers{
+    display: flex;
+    justify-content: space-between;
+}
+.numbers > button{
+    border-radius: 50%;
+    background-color: #dd5a5a;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 1rem 7rem 0 5rem;
+    border: none;
+    box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.332);
+}
+.characters > h1{
+    font-family: 'Urban_Jungle';
+    font-size: 4rem;
+}
+.characters > h3{
+    padding-bottom: 2rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 80%;
+}
+
+.card{
+    list-style-type: none;
+    border-radius: 20px;
+    display: flex;
+    background-image: url(/pokeball.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover{
+    transform:scale(1.1);
+}
+.pokemon{
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.detail{
+    background-color: #ffffff6a;
+    margin-top: 10px;
+    border-radius: 0.8rem;
+    color: white;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+.name{
+    margin-top: 10px;
+    border-radius: 0.8rem;
+    color: white;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+.select, .search{
+    height: 2rem;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.332);
+    width: 20rem;
+    border: none;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 20rem;
+    text-align: center;
+}
+.slider {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+  }
+.type{
+    padding-bottom: 5rem;
+}
+  
+  .slider input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider-toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fafa00;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider-toggle:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ffffffe9;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  .slider input[type="checkbox"]:checked + .slider-toggle {
+    background-color: #ffa600;
+  }
+  
+  .slider input[type="checkbox"]:checked + .slider-toggle:before {
+    background-color: #000000db;
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+.containerDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+.principalDetails{
+    margin-top: 14rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    height: 20rem;
+    position: relative;
+    background-color: white;
+    border: 2px solid rgba(161, 157, 157, 0.26);
+    right: 6rem;
+}
+.principalDetails > img{
+    width: 280px;
+    position: absolute;
+    top: -7rem;
+    left: 15rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(161, 157, 157, 0.26);
+}
+.pokemonImg{
+    width: 300px;
+    left: 10rem;
+    top: 0;
+    position: absolute;
+    
+}
+.pokemon-name{
+    position: absolute;
+    left: 20rem;
+    bottom: 2rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(161, 157, 157, 0.26);
+}
+.weight{
+    position: absolute;
+    left: 10rem;
+    bottom: 6rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(161, 157, 157, 0.26);
+}
+.height{
+    position: absolute;
+    left: 35rem;
+    bottom: 6rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(161, 157, 157, 0.26);
+}
+.idDetail{
+    position: absolute;
+    left: 25rem;
+    bottom: 2.2rem;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.558);
+}
+.abilities{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+    background-color: white;
+    position: relative;
+    width: 20rem;
+    height: 10rem;
+    gap: 1rem;
+    align-items: center;
+    left: 8.9rem;
+    top: 1rem;
+}
+.abilities > h2{
+    position: absolute;
+    right: 6.1rem;
+    top: 0.3rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(161, 157, 157, 0.26);
+}
+.abilities > h3{
+    padding: 1rem;
+    border: 1px solid rgba(161, 157, 157, 0.26);
+    margin: 3rem 0rem 0rem 0rem;
+}
+.typeDetails{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+    background-color: white;
+    position: absolute;
+    width: 26rem;
+    height: 10rem;
+    gap: 1rem;
+    align-items: center;
+    left: 11.3rem;
+    top: 35rem;
+}
+.typeDetails > h2{
+    position: absolute;
+    left: 11rem;
+    top: 0.3rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(161, 157, 157, 0.26);
+}
+.typeDetails > h3{
+    padding: 1rem;
+    border: 1px solid rgba(161, 157, 157, 0.26);
+    margin: 3rem 0rem 0rem 0rem;
+}
+.movements{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    left: 25rem;
+    bottom: 30rem;
+}
+.movements > h2{
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(161, 157, 157, 0.26);
+}
+.movements > ul > li{
+    margin: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(161, 157, 157, 0.26);
+}
+
+.card {
+    --bg-card: #27272a;
+    --primary: #6d28d9;
+    --primary-800: #4c1d95;
+    --primary-shadow: #2e1065;
+    --light: #d9d9d9;
+    --zinc-800: #18181b;
+    --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--light) 125%);
+  
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  
+    padding: 1rem;
+    width: calc(33% - 1rem);
+    background-color: var(--bg-card);
+    min-width: 6rem;
+    border-radius: 1rem;
+  }
+  
+  .image_container {
+    overflow: hidden;
+    cursor: pointer;
+  
+    position: relative;
+    z-index: 5;
+  
+    width: 100%;
+    height: 8rem;
+    background-color: var(--primary-800);
+    
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image_container .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 3rem;
+    fill: var(--light);
+  }
+  
+  .title {
+    overflow: clip;
+  
+    width: 100%;
+  
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--light);
+    text-transform: capitalize;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .cart-button {
+    cursor: pointer;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+  
+    padding: 0.5rem;
+    width: 100%;
+    background-image: var(--bg-linear);
+  
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--light);
+    text-wrap: nowrap;
+  
+    border: 2px solid hsla(262, 83%, 58%, 0.5);
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 0.25rem 1px var(--light);
+  }
+  
+  /* From Uiverse.io by Yaya12085 */ 
+.form {
+    background-color: #fff;
+    display: block;
+    padding: 1rem;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container input, .form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+  }
+  
+  .input-container input {
+    background-color: #fff;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .input-container span {
+    display: grid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    place-content: center;
+  }
+  
+  .input-container span svg {
+    color: #9CA3AF;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .submit {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #4F46E5;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .signup-link {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    text-decoration: underline;
+  }
